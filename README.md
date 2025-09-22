@@ -1,0 +1,1 @@
+Este projeto tem o objetivo de servir como portifólio, apresentando atividades e habilidades do seu idealizador.
