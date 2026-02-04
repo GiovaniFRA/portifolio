@@ -1,3 +1,4 @@
+'use client';
 import { CSSProperties } from 'react';
 import {useTranslations} from 'next-intl';
 import { House } from 'lucide-react';
