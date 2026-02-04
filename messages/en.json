@@ -10,6 +10,11 @@
         "education": "Education",
         "experience": "Experience",
         "projects": "Projects",
-        "contact": "Contact"
+        "contact": "Contact",
+        "language":{
+            "language":"Language",
+            "english":"English",
+            "portuguese":"Portuguese"
+        }
     }
 }

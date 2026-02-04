@@ -14,7 +14,7 @@ export default function Home() {
             <h1 style={styles.introducion}>{t('introducion')}</h1>
             <p>{t('description')}</p>
           </div>
-          <button style={styles.button}>{t('contact')}</button>  
+          <button className="button" style={styles.button}>{t('contact')}</button>  
         </div>
         
         <Image
@@ -65,3 +65,4 @@ const styles: { [key: string]: CSSProperties } = {
     marginTop:'6vh',
   }
 }
+

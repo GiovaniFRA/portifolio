@@ -31,7 +31,7 @@ h1 {
   margin: 0.67em 0;
 }
 
-button {
+.button {
   background-color: #4CAF50; /* Green */
   border: none;
   color: white;
@@ -45,6 +45,38 @@ button {
   border-radius: 12px;
 }
 
-button:hover {
+.button:hover {
   background-color: #45a049;
+}
+
+/* Remove a linha de foco/seleção e o fundo dos itens */
+.rt-DropdownMenuItem:focus-visible,
+.rt-DropdownMenuItem[data-highlighted] {
+    outline: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: inherit !important;
+    text-decoration: underline; /* Remove sublinhados se houver */
+}
+
+/* Garante que o botão (Trigger) também não mude no hover/foco */
+.rt-BaseButton:focus,
+.rt-BaseButton:hover {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+button{
+  cursor: pointer;
+}
+
+a{
+  cursor: pointer;
+}
+a:hover{
+  text-decoration:underline;
+}
+.rt-DropdownMenuItem{
+  cursor: pointer;
 }

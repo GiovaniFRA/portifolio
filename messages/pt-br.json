@@ -10,6 +10,11 @@
         "education": "Formação",
         "experience": "Experiência",
         "projects": "Projetos",
-        "contact": "Contatar"
+        "contact": "Contatar",
+        "language":{
+            "language":"Idioma",
+            "english":"Inglês",
+            "portuguese":"Português"
+        }
     }
 }
