@@ -1,6 +1,15 @@
 {
     "index": {
         "title": "Bem vindo ao Meu Portfólio",
-        "description": "Explore meus projetos e habilidades."
+        "introducion":"Desenvolvedor de Software e Engenheiro de Computação",
+        "description": "Trabalhando com tecnologia e estudando soluções de software desde 2020.",
+        "contact":"Contate me"
+    },
+     "header": {
+        "home": "Início",
+        "education": "Formação",
+        "experience": "Experiência",
+        "projects": "Projetos",
+        "contact": "Contatar"
     }
 }

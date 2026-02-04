@@ -1,6 +1,15 @@
 {
     "index": {
         "title": "Welcome to My Portfolio",
-        "description": "Explore my projects and skills."
+        "introducion":"Software Developer and Computer Engineer",
+        "description": "Working with technology and studing Software solutions since 2020.",
+        "contact":"Contact me"
+    },
+    "header": {
+        "home": "Home",
+        "education": "Education",
+        "experience": "Experience",
+        "projects": "Projects",
+        "contact": "Contact"
     }
 }
