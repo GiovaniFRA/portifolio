@@ -10,8 +10,8 @@ const messages = {
 
 export default getRequestConfig(async ({requestLocale}) => {
   const requested = await requestLocale;
-  const locale = routing.locales.includes(requested as any)
-    ? requested
+  const locale = (requested && routing.locales.includes(requested as any))
+    ? (requested as string)
     : routing.defaultLocale;
 
   return {

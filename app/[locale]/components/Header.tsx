@@ -1,10 +1,11 @@
 import { CSSProperties } from 'react';
 import {useTranslations} from 'next-intl';
+import { House } from 'lucide-react';
 export default function Header() {
   const t = useTranslations('header');
   return (
     <header style={styles.header}>
-        <h2>{t('home')}</h2>
+        <h2><House size={24} /></h2>
         <div style={styles.navLinks}>
             <h2>{t('education')}</h2>
             <h2>{t('experience')}</h2>
