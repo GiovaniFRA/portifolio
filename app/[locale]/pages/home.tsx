@@ -1,23 +1,38 @@
-'use client';
+
 import Image from "next/image";
 import {useTranslations} from 'next-intl';
 import { CSSProperties } from 'react';
-import photo from "../img/empty.jpg";
-import Home from "./pages/home";
-import Education from "./pages/education";
-export default function App() {
+import photo from "../../img/empty.jpg";
+export default function Home() {
   const t = useTranslations('index');
   return (
-    <>
-      <Home/>
-      <Education/>
-    </>
+    <div style={styles.container}>
+      <main style={styles.display}>
+        <div style={styles.content}>
+          <div style={styles.textBlock}>
+            <p style={styles.name}>Giovani Alencoi</p>
+            <h1 style={styles.introducion}>{t('introducion')}</h1>
+            <p>{t('description')}</p>
+          </div>
+          <button className="button" style={styles.button}>{t('contact')}</button>  
+        </div>
+        
+        <Image
+          className="dark:invert"
+          src={photo}
+          alt="Fotografia de um homem sorridente"
+          style={styles.photo}
+          priority
+        />
+      </main>
+    </div>
   );
 }
 
 const styles: { [key: string]: CSSProperties } = {
   container:{
     padding:'0 5vw',
+    height:'100vh',
   },
   display: {
     display: 'flex',

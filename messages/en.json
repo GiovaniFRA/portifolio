@@ -16,5 +16,9 @@
             "english":"English",
             "portuguese":"Portuguese"
         }
-    }
+    },
+    "education":{
+        "sumary":"Graduated from the best federal institutions in Brazil, actively working on technological innovation and extension projects under the guidance of highly qualified professionals",
+        "text":"Has a technical degree in systems development from IFRS and is studying computer engineering at UFRGS together with INF (Institute of Informatics)"
+     }
 }

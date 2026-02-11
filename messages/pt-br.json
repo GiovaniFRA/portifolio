@@ -16,5 +16,9 @@
             "english":"Inglês",
             "portuguese":"Português"
         }
+    },
+    "education":{
+        "sumary":"Formado nas melhores instituições federais do Brasil, atuando ativamente em projetos de inovação tecnológica e extensão sob orientação de profissionais altamente qualificados",
+        "text":"Possui formação de técnico em desenvolvimento de sistemas pelo IFRS e cursa engenharia de computação na UFRGS junto ao INF(Instituto de Informática)"
     }
 }

@@ -31,6 +31,12 @@ h1 {
   margin: 0.67em 0;
 }
 
+h2 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 0.67em 0;
+}
+
 .button {
   background-color: #4CAF50; /* Green */
   border: none;
