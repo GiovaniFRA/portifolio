@@ -1,16 +1,22 @@
 import { useState } from "react";
 
-export default function Flipcard({ children, width, height, title, text }: { children: React.ReactNode, width: string, height?: string, title: string, text: string }) {
+export default function Flipcard({ children, width, height, title, text, URL }: { children: React.ReactNode, width: string, height?: string, title: string, text: string, URL?: string }) {
     const [flipped, setFlipped] = useState(false);
-
+    function handleCardClick() {
+        if (URL) {
+            window.open(URL, '_blank');
+        }
+    }
     return (
         <div 
+            onClick={handleCardClick}
             onMouseEnter={() => setFlipped(true)}
             onMouseLeave={() => setFlipped(false)}
             style={{ 
                 perspective: '1000px', 
                 width: width, 
-                height: height || '300px'
+                height: height || '300px',
+                cursor: "pointer"
             }}
         >   
             <div style={{

@@ -17,7 +17,7 @@ export default function Experience() {
             <p style={styles.text}>{t('text')}</p>
         </div>
         <div style={styles.experiences}>
-            <Flipcard width="25%" height="50vh" title={t('revisaoonline.title')} text={t('revisaoonline.description')}>
+            <Flipcard width="25%" height="50vh" title={t('revisaoonline.title')} text={t('revisaoonline.description')} URL="https://revisaoonline.com.br/">
                 <Image
                 className="dark:invert"
                 src={RVO}
@@ -25,7 +25,7 @@ export default function Experience() {
                 style={styles.photo}
                 />
             </Flipcard>
-            <Flipcard width="25%" height="50vh" title={t('arcrit.title')} text={t('arcrit.description')}>
+            <Flipcard width="25%" height="50vh" title={t('arcrit.title')} text={t('arcrit.description')} URL="https://daleo.tech/cases/arcrit-app/">
                 <Image
                 className="dark:invert"
                 src={ARC}
@@ -33,7 +33,7 @@ export default function Experience() {
                 style={styles.photo}
                 />
             </Flipcard>
-            <Flipcard width="25%" height="50vh" title={t('curadorvirtual.title')} text={t('curadorvirtual.description')}>
+            <Flipcard width="25%" height="50vh" title={t('curadorvirtual.title')} text={t('curadorvirtual.description')} URL="http://curadorvirtual.educacao.ws/">
                 <Image
                 className="dark:invert"
                 src={CV}
@@ -41,7 +41,7 @@ export default function Experience() {
                 style={styles.photo}
                 />
             </Flipcard>
-            <Flipcard width="25%" height="50vh" title={t('mdi.title')} text={t('mdi.description')}>
+            <Flipcard width="25%" height="50vh" title={t('mdi.title')} text={t('mdi.description')} URL="https://integra.ifrs.edu.br/ecossistema/projeto-institucional/54696">
                 <Image
                 className="dark:invert"
                 src={MDI}
