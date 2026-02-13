@@ -23,6 +23,22 @@
      },
     "experience":{
         "sumary":"Experience in software development, with a focus on web and mobile applications, using technologies such as React, React Native, Node.js, and Python.",
-        "text":"Worked as a software developer at a technology company, where I was responsible for developing and maintaining web and mobile applications. I also participated in the design and implementation of new features, as well as in the optimization of existing ones."
+        "text":"Worked as a software developer at a technology company, where I was responsible for developing and maintaining web and mobile applications. I also participated in the design and implementation of new features, as well as in the optimization of existing ones.",
+        "revisaoonline":{
+            "title":"Revisão Online",
+            "description":"RevisãoOnline is one of the leading free ENEM essay correction sites. The platform follows the MVC model, built with PHP (backend), MySQL (database), and a frontend stack of HTML, CSS, and JavaScript."
+        },
+        "arcrit":{
+            "title":"Arcrit",
+            "description":"Arcrit is a gamified platform for urban architectural discovery and evaluation. The tech stack features a React/Next.js frontend and a Firebase backend for real-time data and authentication."
+        },
+        "mdi":{
+            "title":"MDI: My Data Importer",
+            "description":"MDI is a platform integrated with Moodle that enables users to analyze large volumes of data through various tools. The application was developed using React, PostgreSQL, and Python for AI services."
+        },
+        "curadorvirtual":{
+            "title":"Curador Virtual",
+            "description":"Curador Virtual is a web application that allows users to review and rate products and services. The application was developed using React, Node.js, and MongoDB."
+        }
      }
 }

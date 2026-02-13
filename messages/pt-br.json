@@ -23,6 +23,22 @@
     },
     "experience":{
         "sumary":"Experiência em desenvolvimento de software, com foco em aplicações web e mobile, utilizando tecnologias como React, React Native, Node.js e Python.",
-        "text":"Trabalhou como desenvolvedor de software em uma empresa de tecnologia, onde foi responsável por desenvolver e manter aplicações web e mobile. Também participou do design e implementação de novas funcionalidades, bem como na otimização das existentes."
+        "text":"Trabalhou como desenvolvedor de software em uma empresa de tecnologia, onde foi responsável por desenvolver e manter aplicações web e mobile. Também participou do design e implementação de novas funcionalidades, bem como na otimização das existentes.",
+        "revisaoonline":{
+            "title":"Revisão Online",
+            "description":"O RevisãoOnline é um dos melhores sites de correção de redação do ENEM grátis. A plataforma implementa o modelo MVC, utilizando PHP para o backend, MySQL para o banco de dados e HTML, CSS e JavaScript para o frontend."
+        },
+        "arcrit":{
+            "title":"Arcrit",
+            "description":"Arcrit é uma aplicação que permite, de modo gameficado, descobrir e avaliar construções de sua cidade. No desenvolvimento foram utilizados React Next.js para interface e um backend com Firebase."
+        },
+        "mdi":{
+            "title":"MDI: My Data Importer",
+            "description":"MDI é uma plataforma integrada ao moodle que permite aos usuários analisar grandes quantidades de dados através de diversas ferramentas. A aplicação foi desenvolvida utilizando React, Postgres e Python para serviços de IA."
+        },
+        "curadorvirtual":{
+            "title":"Curador Virtual",
+            "description":"Curador Virtual is a web application that allows users to discover and create works of art. The application was developed using React for specific components and a backend powered by the Enyalius Framework."
+        }
      }
 }

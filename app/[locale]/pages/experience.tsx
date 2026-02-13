@@ -17,7 +17,7 @@ export default function Experience() {
             <p style={styles.text}>{t('text')}</p>
         </div>
         <div style={styles.experiences}>
-            <Flipcard width="25%" height="50vh" title="Software Developer" text="Worked as a software developer at a technology company, where I was responsible for developing and maintaining web and mobile applications. I also participated in the design and implementation of new features, as well as in the optimization of existing ones.">
+            <Flipcard width="25%" height="50vh" title={t('revisaoonline.title')} text={t('revisaoonline.description')}>
                 <Image
                 className="dark:invert"
                 src={RVO}
@@ -25,7 +25,7 @@ export default function Experience() {
                 style={styles.photo}
                 />
             </Flipcard>
-            <Flipcard width="25%" height="50vh" title="Software Developer" text="Worked as a software developer at a technology company, where I was responsible for developing and maintaining web and mobile applications. I also participated in the design and implementation of new features, as well as in the optimization of existing ones.">
+            <Flipcard width="25%" height="50vh" title={t('arcrit.title')} text={t('arcrit.description')}>
                 <Image
                 className="dark:invert"
                 src={ARC}
@@ -33,7 +33,7 @@ export default function Experience() {
                 style={styles.photo}
                 />
             </Flipcard>
-            <Flipcard width="25%" height="50vh" title="Software Developer" text="Worked as a software developer at a technology company, where I was responsible for developing and maintaining web and mobile applications. I also participated in the design and implementation of new features, as well as in the optimization of existing ones.">
+            <Flipcard width="25%" height="50vh" title={t('curadorvirtual.title')} text={t('curadorvirtual.description')}>
                 <Image
                 className="dark:invert"
                 src={CV}
@@ -41,7 +41,7 @@ export default function Experience() {
                 style={styles.photo}
                 />
             </Flipcard>
-            <Flipcard width="25%" height="50vh" title="Software Developer" text="Worked as a software developer at a technology company, where I was responsible for developing and maintaining web and mobile applications. I also participated in the design and implementation of new features, as well as in the optimization of existing ones.">
+            <Flipcard width="25%" height="50vh" title={t('mdi.title')} text={t('mdi.description')}>
                 <Image
                 className="dark:invert"
                 src={MDI}
