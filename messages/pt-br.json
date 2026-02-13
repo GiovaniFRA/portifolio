@@ -20,5 +20,9 @@
     "education":{
         "sumary":"Formado nas melhores instituições federais do Brasil, atuando ativamente em projetos de inovação tecnológica e extensão sob orientação de profissionais altamente qualificados",
         "text":"Possui formação de técnico em desenvolvimento de sistemas pelo IFRS e cursa engenharia de computação na UFRGS junto ao INF(Instituto de Informática)"
-    }
+    },
+    "experience":{
+        "sumary":"Experiência em desenvolvimento de software, com foco em aplicações web e mobile, utilizando tecnologias como React, React Native, Node.js e Python.",
+        "text":"Trabalhou como desenvolvedor de software em uma empresa de tecnologia, onde foi responsável por desenvolver e manter aplicações web e mobile. Também participou do design e implementação de novas funcionalidades, bem como na otimização das existentes."
+     }
 }

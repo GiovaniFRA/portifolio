@@ -3,6 +3,7 @@ import Image from "next/image";
 import {useTranslations} from 'next-intl';
 import { CSSProperties } from 'react';
 import photo from "../../img/empty.jpg";
+
 export default function Home() {
   const t = useTranslations('index');
   return (

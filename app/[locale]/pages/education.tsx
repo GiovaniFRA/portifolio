@@ -7,7 +7,7 @@ import INF from "../../img/INF.png";
 import IFRS from "../../img/IFRS.png";
 import Card from "../components/Card";
 
-export default function Home() {
+export default function Education() {
   const t = useTranslations('education');
   return (
     <div style={styles.container}>

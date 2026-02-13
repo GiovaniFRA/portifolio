@@ -1,16 +1,16 @@
 'use client';
-import Image from "next/image";
 import {useTranslations} from 'next-intl';
 import { CSSProperties } from 'react';
-import photo from "../img/empty.jpg";
 import Home from "./pages/home";
 import Education from "./pages/education";
+import Experience from "./pages/experience";
 export default function App() {
   const t = useTranslations('index');
   return (
     <>
       <Home/>
       <Education/>
+      <Experience/>
     </>
   );
 }
