@@ -9,6 +9,10 @@ import Card from "../components/Card";
 
 export default function Education() {
   const t = useTranslations('education');
+
+  function handleCardClick(URL: string) {
+    window.open(URL, '_blank');
+  }
   return (
     <div style={styles.container}>
       <main style={styles.display}>
@@ -18,7 +22,7 @@ export default function Education() {
         </div>
 
         <div style={styles.schools}>
-            <Card width="30%" height="50vh">
+            <Card width="30%" height="50vh" onClick={() => handleCardClick("https://www.ufrgs.br/site/a-ufrgs/apresentacao/")}>
                 <Image
                 className="dark:invert"
                 src={UFRGS}
@@ -27,7 +31,7 @@ export default function Education() {
                 />
             </Card>
             
-            <Card width="30%" height="50vh" >
+            <Card width="30%" height="50vh" onClick={() => handleCardClick("https://www.inf.ufrgs.br/site/institucional/apresentacao/")}>
                 <Image
                 className="dark:invert"
                 src={INF}
@@ -36,7 +40,7 @@ export default function Education() {
                 />
             </Card>
 
-            <Card width="30%" height="50vh">
+            <Card width="30%" height="50vh" onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
                 <Image
                 className="dark:invert"
                 src={IFRS}
@@ -82,7 +86,7 @@ const styles: { [key: string]: CSSProperties } = {
     height:"70vh",
   },
   photo:{
-    width:"70%"
+    width:"70%",
   }
 }
 
