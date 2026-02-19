@@ -14,6 +14,7 @@ export default function About() {
     window.open(URL, '_blank');
   }
   return (
+   <>
     <div style={styles.container}>
       <main style={styles.display}>
         <div style={styles.topBlock}>
@@ -71,6 +72,65 @@ export default function About() {
         </div>
       </main>
     </div>
+
+     <div style={styles.container}>
+      <main style={styles.display}>
+        <div style={styles.topBlock}>
+            <div style={styles.textBlock}>
+                <p style={styles.text}>{t('title')}</p>
+            </div>
+        </div>
+
+        <div style={styles.bottomBlock}>
+          <div style={styles.leftBlock}>
+            <p style={styles.text}>{t('description')}</p>
+          </div>
+
+          <div style={styles.rightBlock}>
+              <div style={styles.internalBlock}>
+                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://www.ufrgs.br/site/a-ufrgs/apresentacao/")}>
+                    <Image
+                    className="dark:invert"
+                    src={UFRGS}
+                    alt="Fotografia de um homem sorridente"
+                    style={styles.photo}
+                    />
+                </Card>
+                
+                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://www.inf.ufrgs.br/site/institucional/apresentacao/")}>
+                    <Image
+                    className="dark:invert"
+                    src={INF}
+                    alt="Fotografia de um homem sorridente"
+                    style={styles.photo}
+                    />
+                </Card>
+              </div>
+              
+              <div style={styles.internalBlock}>
+                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
+                    <Image
+                    className="dark:invert"
+                    src={IFRS}
+                    alt="Fotografia de um homem sorridente"
+                    style={styles.photo}
+                    />
+                </Card>
+
+                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
+                    <Image
+                    className="dark:invert"
+                    src={IFRS}
+                    alt="Fotografia de um homem sorridente"
+                    style={styles.photo}
+                    />
+                </Card>
+              </div>
+          </div>
+        </div>
+      </main>
+    </div>
+   </>
   );
 }
 
