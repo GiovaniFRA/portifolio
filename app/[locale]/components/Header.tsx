@@ -37,7 +37,7 @@ export default function Header() {
             <div style={styles.navLinks}>
                 <a>{t('education')}</a>
                 <a>{t('experience')}</a>
-                <a>{t('projects')}</a>
+                <a>{t('about')}</a>
             </div>
             <button className="button" style={styles.contactbtn}>{t('contact')}</button>
         </div>

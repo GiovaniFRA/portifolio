@@ -5,11 +5,11 @@
         "description": "Trabalhando com tecnologia e estudando soluções de software desde 2020.",
         "contact":"Contate me"
     },
-     "header": {
+    "header": {
         "home": "Início",
         "education": "Formação",
         "experience": "Experiência",
-        "projects": "Projetos",
+        "about": "Sobre",
         "contact": "Contatar",
         "language":{
             "language":"Idioma",
@@ -40,5 +40,9 @@
             "title":"Curador Virtual",
             "description":"Curador Virtual is a web application that allows users to discover and create works of art. The application was developed using React for specific components and a backend powered by the Enyalius Framework."
         }
-     }
+    },
+    "about":{
+        "title":"Um profissional que busca ampliar seus conhecimentos  sobre tecnologias. Participando em workshops e treinamentos com foco em tecnologia.",
+        "description":"O mundo da tecnologia vem crescendo e se reinventando, é necessário estar sempre aprendendo. Por isso busca engajar-se em eventos que fomentem desenvolvimento e prática de conhecimento"
+    }
 }

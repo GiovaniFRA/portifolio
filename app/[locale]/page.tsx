@@ -4,6 +4,7 @@ import { CSSProperties } from 'react';
 import Home from "./pages/home";
 import Education from "./pages/education";
 import Experience from "./pages/experience";
+import About from './pages/about';
 export default function App() {
   const t = useTranslations('index');
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Home/>
       <Education/>
       <Experience/>
+      <About/>
     </>
   );
 }

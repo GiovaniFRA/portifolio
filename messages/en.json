@@ -9,7 +9,7 @@
         "home": "Home",
         "education": "Education",
         "experience": "Experience",
-        "projects": "Projects",
+        "about": "About",
         "contact": "Contact",
         "language":{
             "language":"Language",
@@ -40,5 +40,9 @@
             "title":"Curador Virtual",
             "description":"Curador Virtual is a web application that allows users to review and rate products and services. The application was developed using React, Node.js, and MongoDB."
         }
-     }
+    },
+    "about":{
+        "title":"About Me",
+        "description":"I am a passionate software developer with a strong background in computer engineering. I have experience in developing web and mobile applications, and I am always eager to learn new technologies and improve my skills. I am committed to delivering high-quality solutions and contributing to innovative projects."
+    }
 }
