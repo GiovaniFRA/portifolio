@@ -41,7 +41,7 @@ export default function Experience() {
                 style={styles.photo}
                 />
             </Flipcard>
-            <Flipcard width="25%" height="50vh" title={t('mdi.title')} text={t('mdi.description')} URL="https://integra.ifrs.edu.br/ecossistema/projeto-institucional/54696">
+            <Flipcard width="25%" height="50vh" title={t('mdi.title')} text={t('mdi.description')} URL="https://moodledataimport1.websiteseguro.com/">
                 <Image
                 className="dark:invert"
                 src={MDI}

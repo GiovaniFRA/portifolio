@@ -1,5 +1,4 @@
 'use client';
-import { CSSProperties } from 'react';
 import {useTranslations} from 'next-intl';
 import { House } from 'lucide-react';
 import { Languages } from 'lucide-react';
@@ -9,76 +8,52 @@ import { useRouter } from 'next/navigation'
 export default function Header() {
   const t = useTranslations('header');
   const router = useRouter();
+  
   function handleLanguageChange(lang: string) {
     router.push(`/${lang}`);
   }
   return (
-    <header style={styles.header}>
-        <div style={styles.block1}>
-            <a><House size={24} /></a>
-            <div style={{display:"flex", flexDirection:"row", gap:'1vw'}}>
+    <header className="flex items-center justify-between max-w-[1440px] mx-auto w-full px-[5vw] py-6">
+        
+        {/* Lado Esquerdo: Home e Idioma */}
+        <div className="flex items-center gap-6">
+            <a href="/" className="hover:opacity-70 transition-opacity">
+                <House size={24} />
+            </a>
+            
+            <Flex align="center" gap="1">
                 <Languages size={18} />
                 <Theme>
                     <DropdownMenu.Root>
                         <DropdownMenu.Trigger>
-                            <Button variant="ghost" size="2">
+                            <Button variant="ghost" size="2" className="cursor-pointer">
                                 {t('language.language')}
                             </Button>
                         </DropdownMenu.Trigger>
-                        <DropdownMenu.Content variant="soft">
-                            <DropdownMenu.Item onClick={() => handleLanguageChange('pt-br')}>{t('language.portuguese')}</DropdownMenu.Item>
-                            <DropdownMenu.Item onClick={() => handleLanguageChange('en')}>{t('language.english')}</DropdownMenu.Item>
+                        <DropdownMenu.Content variant="soft" color="gray">
+                            <DropdownMenu.Item onClick={() => handleLanguageChange('pt-br')}>
+                                {t('language.portuguese')}
+                            </DropdownMenu.Item>
+                            <DropdownMenu.Item onClick={() => handleLanguageChange('en')}>
+                                {t('language.english')}
+                            </DropdownMenu.Item>
                         </DropdownMenu.Content>
                     </DropdownMenu.Root>
                 </Theme>
-            </div>
+            </Flex>
         </div>
-        <div style={styles.block2}>
-            <div style={styles.navLinks}>
-                <a>{t('education')}</a>
-                <a>{t('experience')}</a>
-                <a>{t('about')}</a>
+
+        {/* Lado Direito: Navegação e Contato */}
+        <nav className="hidden md:flex items-center gap-8">
+            <div className="flex gap-6 text-sm font-medium">
+                <a href="#education" className="hover:underline">{t('education')}</a>
+                <a href="#experience" className="hover:underline">{t('experience')}</a>
+                <a href="#about" className="hover:underline">{t('about')}</a>
             </div>
-            <button className="button" style={styles.contactbtn}>{t('contact')}</button>
-        </div>
+            <button className="bg-black text-white px-5 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                {t('contact')}
+            </button>
+        </nav>
     </header>
   );
-}
-
-const styles: { [key: string]: CSSProperties } = {
-    header:{
-        backgroundColor:'#f5f5f5',
-        display:'flex',
-        alignItems:'center',
-        padding:'2vh 5vw',
-        width:"100%",
-        height:"25%",
-    },
-    navLinks:{
-        display:'flex',
-        flexDirection:'row',
-        width:"70%",
-        gap:'5vw',
-        justifyContent:'flex-start',
-    },
-    contactbtn:{
-        borderRadius:'5px',
-    },
-    block1:{
-        display:'flex',
-        flexDirection:'row',
-        gap:'3vw',
-        justifySelf:'flex-start',
-        alignItems:'center',
-        width:"40%"
-    },
-    block2:{
-        display:'flex',
-        flexDirection:'row',
-        gap:'3vw',
-        justifySelf:'flex-end',
-        alignItems:'center',
-        justifyContent:'flex-end',
-        width:"60%"
-    }
 }

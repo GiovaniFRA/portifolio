@@ -1,6 +1,6 @@
-export default function Card({children,width,height, onClick}: {children: React.ReactNode,width:string,height?:string, onClick?: () => void}) {
+export default function Card({children,className,onClick}: {children: React.ReactNode, className?: string, onClick?: () => void}) {
     return(
-        <div style={{...styles.card,width:width,height:height}} onClick={onClick}>
+        <div className={className} style={{...styles.card}} onClick={onClick}>
             {children}
         </div>
     );

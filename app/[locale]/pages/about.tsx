@@ -30,7 +30,7 @@ export default function About() {
 
           <div style={styles.rightBlock}>
               <div style={styles.internalBlock}>
-                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://www.ufrgs.br/site/a-ufrgs/apresentacao/")}>
+                <Card  onClick={() => handleCardClick("https://www.ufrgs.br/site/a-ufrgs/apresentacao/")}>
                     <Image
                     className="dark:invert"
                     src={UFRGS}
@@ -39,7 +39,7 @@ export default function About() {
                     />
                 </Card>
                 
-                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://www.inf.ufrgs.br/site/institucional/apresentacao/")}>
+                <Card  onClick={() => handleCardClick("https://www.inf.ufrgs.br/site/institucional/apresentacao/")}>
                     <Image
                     className="dark:invert"
                     src={INF}
@@ -50,7 +50,7 @@ export default function About() {
               </div>
               
               <div style={styles.internalBlock}>
-                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
+                <Card  onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
                     <Image
                     className="dark:invert"
                     src={IFRS}
@@ -59,7 +59,7 @@ export default function About() {
                     />
                 </Card>
 
-                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
+                <Card onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
                     <Image
                     className="dark:invert"
                     src={IFRS}
@@ -88,7 +88,7 @@ export default function About() {
 
           <div style={styles.rightBlock}>
               <div style={styles.internalBlock}>
-                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://www.ufrgs.br/site/a-ufrgs/apresentacao/")}>
+                <Card onClick={() => handleCardClick("https://www.ufrgs.br/site/a-ufrgs/apresentacao/")}>
                     <Image
                     className="dark:invert"
                     src={UFRGS}
@@ -97,7 +97,7 @@ export default function About() {
                     />
                 </Card>
                 
-                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://www.inf.ufrgs.br/site/institucional/apresentacao/")}>
+                <Card onClick={() => handleCardClick("https://www.inf.ufrgs.br/site/institucional/apresentacao/")}>
                     <Image
                     className="dark:invert"
                     src={INF}
@@ -108,7 +108,7 @@ export default function About() {
               </div>
               
               <div style={styles.internalBlock}>
-                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
+                <Card onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
                     <Image
                     className="dark:invert"
                     src={IFRS}
@@ -117,7 +117,7 @@ export default function About() {
                     />
                 </Card>
 
-                <Card width="60vh" height="35vh" onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
+                <Card onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
                     <Image
                     className="dark:invert"
                     src={IFRS}

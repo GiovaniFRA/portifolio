@@ -5,14 +5,19 @@ import Home from "./pages/home";
 import Education from "./pages/education";
 import Experience from "./pages/experience";
 import About from './pages/about';
+import Header from './components/Header';
 export default function App() {
   const t = useTranslations('index');
   return (
     <>
-      <Home/>
-      <Education/>
+      <div className="bg-[#f5f5f5] min-h-dvh w-full">
+        <Header/>
+        <Home/>
+        <Education/>
+      </div>
+      {/* <Education/>
       <Experience/>
-      <About/>
+      <About/> */}
     </>
   );
 }

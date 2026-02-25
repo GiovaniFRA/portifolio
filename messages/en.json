@@ -14,12 +14,12 @@
         "language":{
             "language":"Language",
             "english":"English",
-            "portuguese":"Portuguese"
+            "portuguese":"Português"
         }
     },
     "education":{
-        "sumary":"Graduated from the best federal institutions in Brazil, actively working on technological innovation and extension projects under the guidance of highly qualified professionals",
-        "text":"Has a technical degree in systems development from IFRS and is studying computer engineering at UFRGS together with INF (Institute of Informatics)"
+        "myedu":"My Education",
+        "text":"Graduated from the best federal institutions in Brazil, actively working on technological innovation and extension projects under the guidance of highly qualified professionals. Has a technical degree in systems development from IFRS and is studying computer engineering at UFRGS together with INF (Institute of Informatics)"
      },
     "experience":{
         "sumary":"Experience in software development, with a focus on web and mobile applications, using technologies such as React, React Native, Node.js, and Python.",
