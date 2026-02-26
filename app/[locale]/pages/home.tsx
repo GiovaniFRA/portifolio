@@ -4,7 +4,9 @@ export default function Home() {
   const t = useTranslations('index');
   return (
     
-      <main className="
+      <main 
+      id="home"
+      className="
         flex flex-col h-screen bg-[white] min-h-[500px]
         md:flex-row items-center justify-center gap-8 px-8
         2xl: w-full max-h-[900px]

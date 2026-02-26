@@ -42,7 +42,7 @@
         }
     },
     "about":{
-        "title":"About Me",
+        "aboutme":"About Me",
         "description":"I am a passionate software developer with a strong background in computer engineering. I have experience in developing web and mobile applications, and I am always eager to learn new technologies and improve my skills. I am committed to delivering high-quality solutions and contributing to innovative projects."
     }
 }

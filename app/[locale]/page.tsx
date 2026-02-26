@@ -10,9 +10,10 @@ export default function App() {
   const t = useTranslations('index');
   return (
     <>
-      <div className="bg-[#f5f5f5] min-h-dvh w-full">
+      <div className="bg-[red] w-full">
         <Header/>
         <Home/>
+        <About/>
         <Education/>
       </div>
       {/* <Education/>

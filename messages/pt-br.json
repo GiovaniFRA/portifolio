@@ -42,7 +42,7 @@
         }
     },
     "about":{
-        "title":"Um profissional que busca ampliar seus conhecimentos  sobre tecnologias. Participando em workshops e treinamentos com foco em tecnologia.",
-        "description":"O mundo da tecnologia vem crescendo e se reinventando, é necessário estar sempre aprendendo. Por isso busca engajar-se em eventos que fomentem desenvolvimento e prática de conhecimento"
+        "aboutme":"Sobre Mim",
+        "description":"Sou um profissional que busca ampliar seus conhecimentos e integrarse com a comunidade ao redor. Participando em workshops e treinamentos com foco em tecnologia."
     }
 }
