@@ -38,11 +38,12 @@
         },
         "curadorvirtual":{
             "title":"Curador Virtual",
-            "description":"Curador Virtual is a web application that allows users to discover and create works of art. The application was developed using React for specific components and a backend powered by the Enyalius Framework."
+            "description":"Curador Virtual é uma aplicação web que permite aos usuários descobrir e criar obras de arte. A aplicação foi desenvolvida utilizando React para componentes específicos e um backend impulsionado pelo Framework Enyalius."
         }
     },
     "about":{
         "aboutme":"Sobre Mim",
-        "description":"Sou um profissional que busca ampliar seus conhecimentos e integrarse com a comunidade ao redor. Participando em workshops e treinamentos com foco em tecnologia."
+        "description1":"Sou desenvolvedor web há mais de 3 anos, com experiência em aplicações que movimentam milhares de usuários. Me considero um profissional que busca ampliar seus conhecimentos e integrar-se com a comunidade ao seu redor. Participando de workshops, treinamentos e capacitações com foco em tecnologia.",
+        "description2":"Além de trabalhar com tecnologias modernas como React, Next.js, Node.js e Python, também tenho experiência em ferramentas já consolidadas no mercado como PHP, MySQL, HTML, CSS e JavaScript. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para entregar soluções de alta qualidade."
     }
 }

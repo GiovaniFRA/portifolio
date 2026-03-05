@@ -4,11 +4,11 @@ export default function Home() {
   const t = useTranslations('index');
   return (
     
-      <main 
+    <main 
       id="home"
       className="
-        flex flex-col h-screen bg-[white] min-h-[500px]
-        md:flex-row items-center justify-center gap-8 px-8
+        flex flex-row bg-[white] min-h-[580px]
+        md:items-center justify-center gap-8 px-8
         2xl: w-full max-h-[900px]
         ">
         <div className="flex flex-col items-center justify-center w-full md:w-7/12 text-center">
@@ -23,6 +23,6 @@ export default function Home() {
             {t('contact')}
           </button>
         </div>
-      </main>    
+    </main>    
   );
 }

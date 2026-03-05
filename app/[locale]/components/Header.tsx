@@ -14,7 +14,7 @@ export default function Header() {
     router.push(`/${lang}`);
   }
   return (
-    <div className="flex w-full bg-[#f5f5f5] fixed justify-center">
+    <div className="flex w-full bg-[#f5f5f5] fixed justify-center z-2">
         <header className="flex items-center bg-[#f5f5f5] justify-between max-w-[1440px] w-full px-[5vw] py-6">
             {/* Lado Esquerdo: Home e Idioma */}
             <div className="hidden md:flex items-center gap-6">
