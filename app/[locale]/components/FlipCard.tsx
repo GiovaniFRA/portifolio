@@ -1,93 +1,55 @@
+'use client';
 import { useState } from "react";
 
-export default function Flipcard({ children, width, height, title, text, URL }: { children: React.ReactNode, width: string, height?: string, title: string, text: string, URL?: string }) {
-    const [flipped, setFlipped] = useState(false);
-    function handleCardClick() {
-        if (URL) {
-            window.open(URL, '_blank');
-        }
-    }
-    return (
-        <div 
-            onClick={handleCardClick}
-            onMouseEnter={() => setFlipped(true)}
-            onMouseLeave={() => setFlipped(false)}
-            style={{ 
-                perspective: '1000px', 
-                width: width, 
-                height: height || '300px',
-                cursor: "pointer"
-            }}
-        >   
-            <div style={{
-                ...styles.inner,
-                transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
-            }}>
-                
-                <div style={styles.cardFront}>
-                    {children}
-                </div>
-
-                <div style={styles.cardBack}>
-                    <h3 style={{ fontWeight: "bold" }}>{title}</h3>
-                    <p>{text}</p>
-                </div>
-
-            </div>
-        </div>
-    );
+interface FlipcardProps {
+  children: React.ReactNode;
+  title: string;
+  text: string;
+  width?: string;
+  height?: string;
+  URL?: string;
+  className?: string;
 }
 
-const styles: { [key: string]: React.CSSProperties } = {
-    inner: {
-        position: 'relative',
-        width: '100%',
-        height: '100%',
-        transition: 'transform 0.6s',
-        transformStyle: 'preserve-3d',
-    },
-    cardCommon: {
-        position: 'absolute',
-        width: '100%',
-        height: '100%',
-        backfaceVisibility: 'hidden',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: '15px',
-        backgroundColor: 'white',
-        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.5)',
-        padding: '20px',
-    },
-    cardFront: {
-        position: 'absolute',
-        width: '100%',
-        height: '100%',
-        backfaceVisibility: 'hidden',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: '15px',
-        backgroundColor: 'white',
-        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.5)',
-        padding: '20px',
-    },
-    cardBack: {
-        position: 'absolute',
-        width: '100%',
-        height: '100%',
-        backfaceVisibility: 'hidden',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'flex-start',
-        borderRadius: '15px',
-        backgroundColor: 'white',
-        boxShadow: '0px 4px 12px rgba(0, 0, 0, 0.5)',
-        padding: '20px',
-        transform: 'rotateY(180deg)',
-        gap: '4vh',
-    }
+export default function Flipcard({ children, title, text, width = '300px', height = '300px', URL, className }: FlipcardProps) {
+  const [flipped, setFlipped] = useState(false);
+
+  const handleCardClick = () => {
+    if (URL) window.open(URL, '_blank');
+  };
+
+  return (
+    <div
+      onClick={handleCardClick}
+      onMouseEnter={() => setFlipped(true)}
+      onMouseLeave={() => setFlipped(false)}
+      className={`relative cursor-pointer [perspective:1000px] group ${className}`}
+      style={{ width, height }}
+    >
+      <div
+        className={`relative w-full h-full transition-transform duration-600 [transform-style:preserve-3d] ${
+          flipped ? '[transform:rotateY(180deg)]' : '[transform:rotateY(0deg)]'
+        }`}
+      >
+        
+        {/* Lado da FRENTE com Reflexo */}
+        <div className="absolute inset-0 w-full h-full [backface-visibility:hidden] flex flex-col items-center justify-center rounded-[15px] bg-white shadow-[0px_4px_12px_rgba(0,0,0,0.5)] p-5 overflow-hidden">
+          
+          {/* Efeito de Reflexo (Glow/Shimmer) */}
+          <div className="absolute inset-0 translate-x-[-150%] group-hover:translate-x-[150%] transition-transform duration-1000 ease-in-out pointer-events-none
+            bg-gradient-to-tr from-transparent via-white/40 to-transparent [transform:rotate(60deg)] scale-150" 
+          />
+          
+          {children}
+        </div>
+
+        {/* Lado de TRÁS */}
+        <div className="absolute inset-0 w-full h-full [backface-visibility:hidden] flex flex-col items-start justify-center rounded-[15px] bg-white shadow-[0px_4px_12px_rgba(0,0,0,0.5)] p-5 [transform:rotateY(180deg)] gap-2">
+          <h3 className="font-bold text-sm">{title}</h3>
+          <p className="text-[0.8rem] leading-relaxed">{text}</p>
+        </div>
+
+      </div>
+    </div>
+  );
 }

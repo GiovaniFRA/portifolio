@@ -22,8 +22,9 @@
         "text":"Formado nas melhores instituições federais do Brasil, atuando ativamente em projetos de inovação tecnológica e extensão, sob orientação de profissionais altamente qualificados. Sou técnico em desenvolvimento de sistemas pelo IFRS e atualmente curso Engenharia de Computação na UFRGS junto ao INF(Instituto de Informática)."
     },
     "experience":{
-        "sumary":"Experiência em desenvolvimento de software, com foco em aplicações web e mobile, utilizando tecnologias como React, React Native, Node.js e Python.",
-        "text":"Trabalhou como desenvolvedor de software em uma empresa de tecnologia, onde foi responsável por desenvolver e manter aplicações web e mobile. Também participou do design e implementação de novas funcionalidades, bem como na otimização das existentes.",
+        "myexp":"Minha Experiência",
+        "description1":"Sou desenvolvedor web há mais de 3 anos, com experiência em aplicações que movimentam milhares de usuários. Atuo na área de desenvolvimento web e mobile, utilizando tecnologias como HTML, CSS, JavaScript, React, React Native, PHP e MySQL.",
+        "description2":"Fui ativo durante minha formação técnica em projetos de pesquisa e inovação tecnológica, em iniciativas como o Revisão Online e Curador Virtual. Mais recentemente tive a oportunidade de atuar profissionalmente como consultor de desenvolvimento em aplicações como Arcrit e MDI, aprimorando design e funcionalidades.",
         "revisaoonline":{
             "title":"Revisão Online",
             "description":"O RevisãoOnline é um dos melhores sites de correção de redação do ENEM grátis. A plataforma implementa o modelo MVC, utilizando PHP para o backend, MySQL para o banco de dados e HTML, CSS e JavaScript para o frontend."

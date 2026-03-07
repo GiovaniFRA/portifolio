@@ -15,6 +15,7 @@ export default function App() {
         <Home/>
         <About/>  
         <Education/>
+        <Experience/>
       </div>
       {/* <Education/>
       <Experience/>

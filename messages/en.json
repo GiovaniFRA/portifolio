@@ -22,8 +22,9 @@
         "text":"Graduated from the best federal institutions in Brazil, actively working on technological innovation and extension projects under the guidance of highly qualified professionals. Has a technical degree in systems development from IFRS and is studying computer engineering at UFRGS together with INF (Institute of Informatics)"
      },
     "experience":{
-        "sumary":"Experience in software development, with a focus on web and mobile applications, using technologies such as React, React Native, Node.js, and Python.",
-        "text":"Worked as a software developer at a technology company, where I was responsible for developing and maintaining web and mobile applications. I also participated in the design and implementation of new features, as well as in the optimization of existing ones.",
+        "myexp":"My Experience",
+        "description1":"Experience in software development, with a focus on web and mobile applications, using technologies such as React, React Native, Node.js, and Python.",
+        "description2":"Worked as a software developer at a technology company, where I was responsible for developing and maintaining web and mobile applications. I also participated in the design and implementation of new features, as well as in the optimization of existing ones.",
         "revisaoonline":{
             "title":"Revisão Online",
             "description":"RevisãoOnline is one of the leading free ENEM essay correction sites. The platform follows the MVC model, built with PHP (backend), MySQL (database), and a frontend stack of HTML, CSS, and JavaScript."

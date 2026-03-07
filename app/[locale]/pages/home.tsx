@@ -8,8 +8,8 @@ export default function Home() {
       id="home"
       className="
         flex flex-row bg-[white] min-h-[580px]
-        md:items-center justify-center gap-8 px-8
-        2xl: w-full max-h-[900px]
+        md:items-center justify-center gap-8 px-8 md:h-screen
+        2xl: w-full 2xl:max-h-[900px]
         ">
         <div className="flex flex-col items-center justify-center w-full md:w-7/12 text-center">
           <p className="text-xl md:text-2xl">Giovani Alencoi</p>

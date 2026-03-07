@@ -15,9 +15,9 @@ export default function About() {
     window.open(URL, '_blank');
   }
   return (
-    <main id="about" className="flex h-[1000px] flex-row bg-[white]
-    md: items-center justify-center gap-8 px-8 h-[900px]
-    2xl: w-full
+    <main id="about" className="flex h-[1000px] flex-row
+    md: items-center justify-center gap-8 px-8 md:h-screen md:py-[370px]
+    2xl: w-full 2xl:max-h-[900px]
     ">
         <div className="flex flex-col items-center justify-center w-full max-w-[1440px] 
         md:w-7/12 text-center gap-10">
