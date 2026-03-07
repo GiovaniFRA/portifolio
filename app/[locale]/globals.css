@@ -86,3 +86,18 @@ a:hover{
 .rt-DropdownMenuItem{
   cursor: pointer;
 }
+/* globals.css */
+@theme {
+  --animate-wave-left: waveLeft 3s ease-in-out;
+
+  @keyframes waveLeft {
+    0%{ 
+      transform: translate(0, 0); 
+      opacity: 0; 
+    }
+    50% { 
+      transform: translate(-15px, -26px); 
+      opacity: 0;
+    }
+  }
+}
