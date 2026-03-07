@@ -46,5 +46,9 @@
         "aboutme":"Sobre Mim",
         "description1":"Sou desenvolvedor web há mais de 3 anos, com experiência em aplicações que movimentam milhares de usuários. Me considero um profissional que busca ampliar seus conhecimentos e integrar-se com a comunidade ao seu redor. Participando de workshops, treinamentos e capacitações com foco em tecnologia.",
         "description2":"Além de trabalhar com tecnologias modernas como React, Next.js, Node.js e Python, também tenho experiência em ferramentas já consolidadas no mercado como PHP, MySQL, HTML, CSS e JavaScript. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para entregar soluções de alta qualidade."
+    },
+    "contact":{
+        "contactme":"Contatar-me",
+        "description1":"Se você deseja entrar em contato comigo, seja para discutir oportunidades de trabalho, colaborar em projetos ou simplesmente para conversar sobre tecnologia, sinta-se à vontade para me enviar um e-mail ou me encontrar nas redes sociais. Estou sempre aberto a novas conexões e oportunidades de aprendizado."
     }
 }

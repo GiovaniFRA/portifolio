@@ -51,9 +51,9 @@ export default function Header() {
                     <a href="#education" className="hover:underline">{t('education')}</a>
                     <a href="#experience" className="hover:underline">{t('experience')}</a>
                 </div>
-                <button className="bg-black text-white px-5 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
+                <a href="#contact" className="bg-black text-white px-5 py-2 rounded-full text-sm hover:bg-gray-800 transition-colors">
                     {t('contact')}
-                </button>
+                </a>
             </nav>
 
             {/* Mobile: Menu Hamburger */}
@@ -77,6 +77,9 @@ export default function Header() {
                             </DropdownMenu.Item>
                             <DropdownMenu.Item>
                                 <a href="#experience" className="hover:underline">{t('experience')}</a>
+                            </DropdownMenu.Item>
+                             <DropdownMenu.Item>
+                                <a href="#contact" className="hover:underline">{t('contact')}</a>
                             </DropdownMenu.Item>
                         </DropdownMenu.Content>
                     </DropdownMenu.Root>

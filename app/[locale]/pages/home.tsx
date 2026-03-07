@@ -19,9 +19,9 @@ export default function Home() {
           <p className="mt-4 text-gray-600 max-w-md">
             {t('description')}
           </p>
-          <button className="mt-8 px-8 py-3 bg-black text-white rounded-full hover:opacity-80 transition-opacity">
+          <a href='#contact' className="mt-8 px-8 py-3 bg-black text-white rounded-full hover:opacity-80 transition-opacity">
             {t('contact')}
-          </button>
+          </a>
         </div>
     </main>    
   );
