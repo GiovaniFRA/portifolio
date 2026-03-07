@@ -13,7 +13,7 @@ export default function About() {
   }
   return (
     <main id="experience" className="flex h-[1000px] flex-row
-    md: items-center justify-center gap-8 px-8 md:h-screen md:py-[380px]
+    md: items-center justify-center gap-8 px-8 md:h-screen md:py-[410px]
     2xl: w-full 2xl:max-h-[900px]
     ">
         <div className="flex flex-col items-center justify-center w-full max-w-[1440px] 
@@ -23,7 +23,7 @@ export default function About() {
                 <p className="max-w-[850px] text-left text-[0.9rem]">{t('description1')}</p>
                 <p className="max-w-[850px] text-left text-[0.9rem]">{t('description2')}</p>
             </div>
-            <div className="flex flex-row justify-center items-center gap-8">
+            <div className="flex flex-row justify-center items-center gap-8 w-full">
                <ProjectSection/>
             </div>
         </div>

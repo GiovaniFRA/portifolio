@@ -18,25 +18,22 @@ export default function ProjectSection() {
   ];
 
   return (
-    <div className="animate-on-scroll animate-wave-left flex flex-row w-[980px] justify-center items-center gap-8 overflow-x-auto py-12 scrollbar-hide">
+    <div className="flex flex-row w-[996px]  justify-center items-center gap-8 py-12 scrollbar-hide">
       {projects.map((project, index) => {
+        // 0s, 7s, 14s, 21s
+        const delay = index * 0.9; 
+
         return (
-          <Flipcard
+            <Flipcard
             key={project.id}
-            width="200px"
-            className="min-w-[150px] max-w-[150px] md:max-w-[250px] md:min-w-[200px] md:max-h-[250px] text-left"
+            style={{ animationDelay: `${delay}s` }}
             title={t(`${project.id}.title`)}
             text={t(`${project.id}.description`)}
-            URL={project.url}
-          >
-            <Image 
-              src={project.img} 
-              alt={`Logo ${project.id}`} 
-              className="w-20 h-auto object-contain"
-            />
-          </Flipcard>
+            >
+            <Image src={project.img} alt={project.id} />
+            </Flipcard>
         );
-      })}
+        })}
     </div>
   );
 }

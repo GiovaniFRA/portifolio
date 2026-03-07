@@ -86,18 +86,40 @@ a:hover{
 .rt-DropdownMenuItem{
   cursor: pointer;
 }
-/* globals.css */
-@theme {
-  --animate-wave-left: waveLeft 3s ease-in-out;
 
-  @keyframes waveLeft {
-    0%{ 
-      transform: translate(0, 0); 
+@theme {
+  --animate-shimmer-wave: shimmerWave 3.6s infinite;
+
+  @keyframes shimmerWave {
+    50% { 
+      /* Posição final: Superior Direita (fora do card) */
+      /* Para 60°, o Y deve percorrer uma distância maior que o X */
+      background-position: 150% 350%; 
       opacity: 0; 
     }
-    50% { 
-      transform: translate(-15px, -26px); 
-      opacity: 0;
+    100% { 
+      background-position: 150% 350%; 
+      opacity: 0; 
     }
   }
+}
+
+.shimmer-effect::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  /* Gradiente mais escuro e definido em 60 graus */
+  background: linear-gradient(
+    60deg,
+    transparent 30%,
+    rgba(0, 0, 0, 0.1) 45%,    /* Borda levemente escura */
+    rgba(255, 255, 255, 0.6) 50%, /* Centro brilhante mais opaco */
+    rgba(0, 0, 0, 0.1) 55%,    /* Borda levemente escura */
+    transparent 70%
+  );
+  background-size: 300% 300%;
+  animation: var(--animate-shimmer-wave) linear;
+  animation-delay: inherit;
+  pointer-events: none;
+  z-index: 10;
 }
