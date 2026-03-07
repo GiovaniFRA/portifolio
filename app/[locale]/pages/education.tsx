@@ -14,8 +14,8 @@ export default function Education() {
     window.open(URL, '_blank');
   }
     return (
-        <main id="education" className="flex flex-row h-[1100px] items-center justify-center gap-8 px-8
-        md:gap-8 py-[300px] md:h-screen md:py-[370px]
+        <main id="education" className="flex flex-row h-[1100px] items-center justify-center gap-8 px-8 py-[650px]
+        md:gap-8 md:h-screen md:py-[370px]
         2xl:w-full 2xl:max-h-[900px]
         ">
         <div className="flex flex-col items-center justify-center w-full max-w-[1440px] md:w-7/12 text-center gap-8">

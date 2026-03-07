@@ -57,7 +57,7 @@ export default function Header() {
             </nav>
 
             {/* Mobile: Menu Hamburger */}
-            <nav className="flex md:hidden">
+            <nav className="flex z-3 md:hidden">
                 <Theme>
                     <DropdownMenu.Root>
                         <DropdownMenu.Trigger>
@@ -65,7 +65,7 @@ export default function Header() {
                                 <Menu size={24} />
                             </Button>
                         </DropdownMenu.Trigger>
-                        <DropdownMenu.Content variant="soft" color="gray">
+                        <DropdownMenu.Content className='z-3 bg-[#f5f5f5]' variant="soft" color="gray">
                             <DropdownMenu.Item>
                                 <a href="#home" className="hover:underline">{t('home')}</a>
                             </DropdownMenu.Item>
@@ -74,6 +74,9 @@ export default function Header() {
                             </DropdownMenu.Item>
                             <DropdownMenu.Item>
                                 <a href="#education" className="hover:underline">{t('education')}</a>
+                            </DropdownMenu.Item>
+                            <DropdownMenu.Item>
+                                <a href="#experience" className="hover:underline">{t('experience')}</a>
                             </DropdownMenu.Item>
                         </DropdownMenu.Content>
                     </DropdownMenu.Root>
