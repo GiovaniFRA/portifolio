@@ -67,9 +67,7 @@ export default function Header() {
                         </DropdownMenu.Trigger>
                         
                         <DropdownMenu.Content 
-                            className='z-3 bg-[#f5f5f5] p-0 overflow-hidden min-w-[200px]' 
-                            variant="soft" 
-                            color="gray"
+                            className='z-3 bg-[#f5f5f5] p-0 overflow-hidden min-w-[200px]'
                         >
                             {/* Usando Grid para separar as áreas de forma rígida */}
                             <div className="grid grid-cols-[1fr_auto] divide-x divide-gray-300">
