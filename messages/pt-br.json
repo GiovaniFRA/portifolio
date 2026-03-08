@@ -1,6 +1,58 @@
 {
     "index": {
         "title": "Bem vindo ao Meu Portfólio",
-        "description": "Explore meus projetos e habilidades."
+        "introducion":"Desenvolvedor de Software e Engenheiro de Computação",
+        "description": "Trabalhando com tecnologia e estudando soluções de software desde 2020.",
+        "contact":"Contate me"
+    },
+    "header": {
+        "home": "Início",
+        "education": "Formação",
+        "experience": "Experiência",
+        "about": "Sobre",
+        "contact": "Contatar",
+        "language":{
+            "language":"Idioma",
+            "english":"English",
+            "portuguese":"Português"
+        }
+    },
+    "education":{
+        "myedu":"Minha Formação",
+        "text":"Formado nas melhores instituições federais do Brasil, atuando ativamente em projetos de inovação tecnológica e extensão, sob orientação de profissionais altamente qualificados. Sou técnico em desenvolvimento de sistemas pelo IFRS e atualmente curso Engenharia de Computação na UFRGS junto ao INF(Instituto de Informática)."
+    },
+    "experience":{
+        "myexp":"Minha Experiência",
+        "description1":"Sou desenvolvedor web há mais de 3 anos, com experiência em aplicações que movimentam milhares de usuários. Atuo na área de desenvolvimento web e mobile, utilizando tecnologias como HTML, CSS, JavaScript, React, React Native, PHP e MySQL.",
+        "description2":"Fui ativo durante minha formação técnica em projetos de pesquisa e inovação tecnológica, em iniciativas como o Revisão Online e Curador Virtual. Mais recentemente tive a oportunidade de atuar profissionalmente como consultor de desenvolvimento em aplicações como Arcrit e MDI, aprimorando design e funcionalidades.",
+        "revisaoonline":{
+            "title":"Revisão Online",
+            "description":"O RevisãoOnline é um dos melhores sites de correção de redação do ENEM grátis. A plataforma implementa o modelo MVC, utilizando PHP para o backend, MySQL para o banco de dados e HTML, CSS e JavaScript para o frontend."
+        },
+        "arcrit":{
+            "title":"Arcrit",
+            "description":"Arcrit é uma aplicação que permite, de modo gameficado, descobrir e avaliar construções de sua cidade. No desenvolvimento foram utilizados React Next.js para interface e um backend com Firebase."
+        },
+        "mdi":{
+            "title":"MDI: My Data Importer",
+            "description":"MDI é uma plataforma integrada ao moodle que permite aos usuários analisar grandes quantidades de dados através de diversas ferramentas. A aplicação foi desenvolvida utilizando React, Postgres e Python para serviços de IA."
+        },
+        "curadorvirtual":{
+            "title":"Curador Virtual",
+            "description":"Curador Virtual é uma aplicação web que permite aos usuários descobrir e criar obras de arte. A aplicação foi desenvolvida utilizando React para componentes específicos e um backend impulsionado pelo Framework Enyalius."
+        }
+    },
+    "about":{
+        "aboutme":"Sobre Mim",
+        "description1":"Sou desenvolvedor web há mais de 3 anos, com experiência em aplicações que movimentam milhares de usuários. Me considero um profissional que busca ampliar seus conhecimentos e integrar-se com a comunidade ao seu redor. Participando de workshops, treinamentos e capacitações com foco em tecnologia.",
+        "description2":"Além de trabalhar com tecnologias modernas como React, Next.js, Node.js e Python, também tenho experiência em ferramentas já consolidadas no mercado como PHP, MySQL, HTML, CSS e JavaScript. Estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades para entregar soluções de alta qualidade."
+    },
+    "contact":{
+        "contactme":"Contatar-me",
+        "description1":"Se você deseja entrar em contato comigo, seja para discutir oportunidades de trabalho, colaborar em projetos ou simplesmente para conversar sobre tecnologia, sinta-se à vontade para me enviar um e-mail ou me encontrar nas redes sociais. Estou sempre aberto a novas conexões e oportunidades de aprendizado."
+    },
+    "footer":{
+        "rights":"Todos os direitos reservados.",
+        "about":"Construído com NextJs, Typescript e TailwindCSS."
     }
 }
