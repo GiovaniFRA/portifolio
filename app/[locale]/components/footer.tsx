@@ -13,10 +13,10 @@ export default function Footer() {
     router.push(`/${lang}`);
   }
   return (
-    <div className="absolute w-full my-10 bg-[black] justify-center z-2 h-[250px]">
+    <div className="absolute flex w-full my-10 bg-[black] justify-center z-2 h-[250px]">
         <footer className="flex items-center justify-center gap-8 max-w-[1440px] w-full px-[5vw] py-6">
             {/* Lado Esquerdo: Home e Idioma */}
-            <div className="flex flex-col items-center gap-6 justify-self-start">
+            <div className="flex flex-col items-center gap-6">
                 <a target='blank' href="https://www.linkedin.com/in/giovani-de-alencoi-21aa1427b/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
                     <Linkedin size={24} color="white"/>
                 </a>
