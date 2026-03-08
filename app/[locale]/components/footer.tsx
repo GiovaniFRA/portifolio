@@ -13,7 +13,7 @@ export default function Footer() {
     router.push(`/${lang}`);
   }
   return (
-    <div className="flex w-full bg-[black] justify-center z-2 h-[250px]">
+    <div className="absolute w-full my-10 bg-[black] justify-center z-2 h-[250px]">
         <footer className="flex items-center justify-center gap-8 max-w-[1440px] w-full px-[5vw] py-6">
             {/* Lado Esquerdo: Home e Idioma */}
             <div className="flex flex-col items-center gap-6 justify-self-start">
