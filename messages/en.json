@@ -1,9 +1,9 @@
 {
     "index": {
         "title": "Welcome to My Portfolio",
-        "introducion":"Software Developer and Computer Engineer",
-        "description": "Working with technology and studing Software solutions since 2020.",
-        "contact":"Contact me"
+        "introducion": "Software Developer and Computer Engineer",
+        "description": "Working with technology and studying software solutions since 2020.",
+        "contact": "Contact me"
     },
     "header": {
         "home": "Home",
@@ -19,12 +19,12 @@
     },
     "education":{
         "myedu":"My Education",
-        "text":"Graduated from the best federal institutions in Brazil, actively working on technological innovation and extension projects under the guidance of highly qualified professionals. Has a technical degree in systems development from IFRS and is studying computer engineering at UFRGS together with INF (Institute of Informatics)"
+        "text":"Graduated from the best federal institutions in Brazil, actively working on technological innovation and extension projects under the guidance of highly qualified professionals. I have a technical degree in systems development from IFRS and am currently pursuing a Computer Engineering degree at UFRGS together with INF (Institute of Informatics)."
      },
     "experience":{
         "myexp":"My Experience",
-        "description1":"Experience in software development, with a focus on web and mobile applications, using technologies such as React, React Native, Node.js, and Python.",
-        "description2":"Worked as a software developer at a technology company, where I was responsible for developing and maintaining web and mobile applications. I also participated in the design and implementation of new features, as well as in the optimization of existing ones.",
+        "description1":"I am a web developer with over 3 years of experience building applications that serve thousands of users. I work in web and mobile development using technologies such as HTML, CSS, JavaScript, React, React Native, PHP and MySQL.",
+        "description2":"I was active during my technical training in research and technological innovation projects, initiatives like Revisão Online and Curador Virtual. More recently I had the opportunity to work professionally as a development consultant on applications such as Arcrit and MDI, improving design and functionality.", 
         "revisaoonline":{
             "title":"Revisão Online",
             "description":"RevisãoOnline is one of the leading free ENEM essay correction sites. The platform follows the MVC model, built with PHP (backend), MySQL (database), and a frontend stack of HTML, CSS, and JavaScript."
@@ -39,13 +39,13 @@
         },
         "curadorvirtual":{
             "title":"Curador Virtual",
-            "description":"Curador Virtual is a web application that allows users to review and rate products and services. The application was developed using React, Node.js, and MongoDB."
+            "description":"Curador Virtual is a web application that allows users to discover and create works of art. The application was developed using React for specific components and a backend powered by the Enyalius Framework."
         }
     },
     "about":{
         "aboutme":"About Me",
-        "description1":"I am a passionate software developer with a strong background in computer engineering. I have experience in developing web and mobile applications, and I am always eager to learn new technologies and improve my skills. I am committed to delivering high-quality solutions and contributing to innovative projects.",
-        "description2":"In addition to my technical skills, I am a proactive and collaborative team player. I enjoy working in dynamic environments where I can contribute to the success of the team and the projects we are involved in."
+        "description1":"I am a web developer with over 3 years of experience building applications that serve thousands of users. I consider myself a professional who seeks to expand knowledge and engage with the community around me, participating in workshops, trainings, and technology‑focused courses.",
+        "description2":"Besides working with modern technologies like React, Next.js, Node.js and Python, I also have experience with well‑established tools such as PHP, MySQL, HTML, CSS and JavaScript. I am always looking to learn new technologies and improve my skills to deliver high‑quality solutions."
     },
     "contact":{
         "contactme":"Contact Me",
@@ -53,6 +53,6 @@
     },
     "footer":{
         "rights":"All rights reserved.",
-        "about":"Made with NextJs, Typescript and TailwindCSS."
+        "about":"Built with NextJs, Typescript and TailwindCSS."
     }
 }
