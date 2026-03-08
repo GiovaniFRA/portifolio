@@ -11,9 +11,6 @@ import Card from "../components/Card";
 export default function About() {
   const t = useTranslations('about');
 
-  function handleCardClick(URL: string) {
-    window.open(URL, '_blank');
-  }
   return (
     <main id="about" className="flex h-[1000px] flex-row
     md: items-center justify-center gap-8 px-8 md:h-screen md:py-[370px]
