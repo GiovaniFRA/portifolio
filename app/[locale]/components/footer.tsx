@@ -1,17 +1,10 @@
 'use client';
 import {useTranslations} from 'next-intl';
-import { Languages } from 'lucide-react';
-import { DropdownMenu, Button, Theme, Flex } from '@radix-ui/themes';
-import { useRouter } from 'next/navigation'
 import { Github,Linkedin, Gitlab,Mail} from 'lucide-react';
 
 export default function Footer() {
   const t = useTranslations('footer');
-  const router = useRouter();
   
-  function handleLanguageChange(lang: string) {
-    router.push(`/${lang}`);
-  }
   return (
     <div className="absolute flex w-full my-10 bg-[black] justify-center z-2 h-[250px]">
         <footer className="flex items-center justify-center gap-8 max-w-[1440px] w-full px-[5vw] py-6">

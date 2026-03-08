@@ -1,6 +1,5 @@
 'use client';
 import {useTranslations} from 'next-intl';
-import { CSSProperties } from 'react';
 import Home from "./pages/home";
 import Education from "./pages/education";
 import Experience from "./pages/experience";

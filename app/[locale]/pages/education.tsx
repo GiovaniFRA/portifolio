@@ -1,7 +1,6 @@
 
 import Image from "next/image";
 import {useTranslations} from 'next-intl';
-import { CSSProperties } from 'react';
 import UFRGS from "../../img/UFRGS.png";
 import INF from "../../img/INF.png";
 import IFRS from "../../img/IFRS.png";
