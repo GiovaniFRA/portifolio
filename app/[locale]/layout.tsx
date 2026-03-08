@@ -4,7 +4,6 @@ import {getMessages} from 'next-intl/server';
 import {setRequestLocale} from 'next-intl/server';
 import {routing} from '@/i18n/routing';
 import './globals.css';
-import Header from './components/Header';
 
 type Props = {
   children: React.ReactNode;

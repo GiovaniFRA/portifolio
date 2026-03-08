@@ -10,10 +10,9 @@ interface FlipcardProps {
   URL?: string;
   className?: string;
   style?: React.CSSProperties;
-  wave?: string; // Novo prop para controlar o atraso da animação
 }
 
-export default function Flipcard({ children, title, text, width = '300px', height = '300px', URL, className, style, wave }: FlipcardProps) {
+export default function Flipcard({ children, title, text, width = '300px', height = '300px', URL, className, style }: FlipcardProps) {
   const [flipped, setFlipped] = useState(false);
 
   const handleCardClick = () => {
