@@ -1,16 +1,8 @@
 import {useTranslations} from 'next-intl';
-import REVISAO from "../../img/revisaoonline.png";
-import CURADOR from "../../img/curador-virtual.png";
-import ARCRIT from "../../img/arcrit.svg";
-import MDI from "../../img/mdi.png";
 import ProjectSection from "../components/ProjectsCards";
 
 export default function About() {
   const t = useTranslations('experience');
-
-  function handleCardClick(URL: string) {
-    window.open(URL, '_blank');
-  }
   return (
     <main id="experience" className="flex h-[1900px] flex-row py-[1100px]
     md: items-center justify-center gap-8 px-8 md:h-screen md:py-[390px]
