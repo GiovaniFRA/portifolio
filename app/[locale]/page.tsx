@@ -7,6 +7,7 @@ import Experience from "./pages/experience";
 import About from './pages/about';
 import Header from './components/Header';
 import Contact from './pages/contact';
+import Footer from './components/footer';
 export default function App() {
   const t = useTranslations('index');
   return (
@@ -18,6 +19,7 @@ export default function App() {
         <Education/>
         <Experience/>
         <Contact/>
+        <Footer/>
       </div>
       {/* <Education/>
       <Experience/>
