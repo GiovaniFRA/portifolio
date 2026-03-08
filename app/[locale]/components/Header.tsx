@@ -22,7 +22,7 @@ export default function Header() {
                     <House size={24} />
                 </a>
                 
-                <Flex align="center" gap="1">
+                <Flex align="center" gap="1" className='z-3'>
                     <Languages size={18} />
                     <Theme>
                         <DropdownMenu.Root>
@@ -31,7 +31,7 @@ export default function Header() {
                                     {t('language.language')}
                                 </Button>
                             </DropdownMenu.Trigger>
-                            <DropdownMenu.Content variant="soft" color="gray">
+                            <DropdownMenu.Content className='z-3 bg-[#f5f5f5]' variant="soft" color="gray">
                                 <DropdownMenu.Item onClick={() => handleLanguageChange('pt-br')}>
                                     {t('language.portuguese')}
                                 </DropdownMenu.Item>
@@ -57,7 +57,7 @@ export default function Header() {
             </nav>
 
             {/* Mobile: Menu Hamburger */}
-            <nav className="flex z-3 md:hidden">
+            <nav className="flex z-3 md:hidden gap-70">
                 <Theme>
                     <DropdownMenu.Root>
                         <DropdownMenu.Trigger>
@@ -65,22 +65,61 @@ export default function Header() {
                                 <Menu size={24} />
                             </Button>
                         </DropdownMenu.Trigger>
-                        <DropdownMenu.Content className='z-3 bg-[#f5f5f5]' variant="soft" color="gray">
-                            <DropdownMenu.Item>
-                                <a href="#home" className="hover:underline">{t('home')}</a>
-                            </DropdownMenu.Item>
-                            <DropdownMenu.Item>
-                                <a href="#about" className="hover:underline">{t('about')}</a>
-                            </DropdownMenu.Item>
-                            <DropdownMenu.Item>
-                                <a href="#education" className="hover:underline">{t('education')}</a>
-                            </DropdownMenu.Item>
-                            <DropdownMenu.Item>
-                                <a href="#experience" className="hover:underline">{t('experience')}</a>
-                            </DropdownMenu.Item>
-                             <DropdownMenu.Item>
-                                <a href="#contact" className="hover:underline">{t('contact')}</a>
-                            </DropdownMenu.Item>
+                        
+                        <DropdownMenu.Content 
+                            className='z-3 bg-[#f5f5f5] p-0 overflow-hidden min-w-[200px]' 
+                            variant="soft" 
+                            color="gray"
+                        >
+                            {/* Usando Grid para separar as áreas de forma rígida */}
+                            <div className="grid grid-cols-[1fr_auto] divide-x divide-gray-300">
+                                
+                                {/* LADO ESQUERDO: Navegação em Coluna */}
+                                <div className="flex flex-col p-4 gap-1">
+                                    <DropdownMenu.Item className="focus:bg-blue-50 cursor-pointer rounded-md">
+                                        <a href="#home" className="w-full py-1 px-2 text-sm font-medium">{t('home')}</a>
+                                    </DropdownMenu.Item>
+                                    <DropdownMenu.Item className="focus:bg-blue-50 cursor-pointer rounded-md">
+                                        <a href="#about" className="w-full py-1 px-2 text-sm font-medium">{t('about')}</a>
+                                    </DropdownMenu.Item>
+                                    <DropdownMenu.Item className="focus:bg-blue-50 cursor-pointer rounded-md">
+                                        <a href="#education" className="w-full py-1 px-2 text-sm font-medium">{t('education')}</a>
+                                    </DropdownMenu.Item>
+                                    <DropdownMenu.Item className="focus:bg-blue-50 cursor-pointer rounded-md">
+                                        <a href="#experience" className="w-full py-1 px-2 text-sm font-medium">{t('experience')}</a>
+                                    </DropdownMenu.Item>
+                                    <DropdownMenu.Item className="focus:bg-blue-50 cursor-pointer rounded-md">
+                                        <a href="#contact" className="w-full py-1 px-2 text-sm font-medium">{t('contact')}</a>
+                                    </DropdownMenu.Item>
+                                </div>
+
+                                {/* LADO DIREITO: Idiomas */}
+                                <div className="bg-[#f5f5f5] flex flex-col items-center p-4 gap-4 justify-center">
+                                    <Languages size={20} color='black' />
+                                    <div className="flex flex-col gap-2">
+                                        <button 
+                                            onClick={() => handleLanguageChange('pt-br')}
+                                            className={`px-3 py-1 text-[10px] font-bold rounded border transition-all ${
+                                                t('language.language') === 'pt-br' 
+                                                ? 'bg-blue-600 text-white border-blue-600' 
+                                                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
+                                            }`}
+                                        >
+                                            PT
+                                        </button>
+                                        <button 
+                                            onClick={() => handleLanguageChange('en')}
+                                            className={`px-3 py-1 text-[10px] font-bold rounded border transition-all ${
+                                                t('language.language') === 'en' 
+                                                ? 'bg-blue-600 text-white border-blue-600' 
+                                                : 'bg-white text-gray-600 border-gray-300 hover:border-blue-400'
+                                            }`}
+                                        >
+                                            EN
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </DropdownMenu.Content>
                     </DropdownMenu.Root>
                 </Theme>
