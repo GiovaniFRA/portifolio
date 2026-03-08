@@ -26,7 +26,7 @@ export default function Education() {
             <div className="hidden md:flex flex-row h-[350px] gap-10 justify-center items-center px-5 w-full">
                 <Card className="h-[200px] w-[200px] min-w-[200px] min-h-[200px]" onClick={() => handleCardClick("https://www.ufrgs.br/site/a-ufrgs/apresentacao/")}>
                     <Image
-                    className="dark:invert"
+                    className="no-invert"
                     src={UFRGS}
                     alt="Icone UFRGS"
                     />
@@ -34,7 +34,7 @@ export default function Education() {
                 
                 <Card className="h-[200px] w-[200px] min-w-[200px] min-h-[200px]" onClick={() => handleCardClick("https://www.inf.ufrgs.br/site/institucional/apresentacao/")}>
                     <Image
-                    className="dark:invert"
+                    className="no-invert"
                     src={INF}
                     alt="Icone INF"
                     />
@@ -42,7 +42,7 @@ export default function Education() {
 
                 <Card className="h-[200px] w-[200px] min-w-[200px] min-h-[200px]" onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
                     <Image
-                    className="dark:invert"
+                    className="no-invert"
                     src={IFRS}
                     alt="Icone IFRS"
                     />
@@ -52,7 +52,7 @@ export default function Education() {
             <div className="flex flex-col h-[700px] md:hidden gap-6">
                 <Card className="h-[200px] w-[200px] min-w-[200px] min-h-[200px]" onClick={() => handleCardClick("https://www.ufrgs.br/site/a-ufrgs/apresentacao/")}>
                     <Image
-                    className="dark:invert"
+                    className="no-invert"
                     src={UFRGS}
                     alt="Icone UFRGS"
                     />
@@ -60,7 +60,7 @@ export default function Education() {
                 
                 <Card className="h-[200px] w-[200px] min-w-[200px] min-h-[200px]" onClick={() => handleCardClick("https://www.inf.ufrgs.br/site/institucional/apresentacao/")}>
                     <Image
-                    className="dark:invert"
+                    className="no-invert"
                     src={INF}
                     alt="Icone INF"
                     />
@@ -68,7 +68,7 @@ export default function Education() {
 
                 <Card className="h-[200px] w-[200px] min-w-[200px] min-h-[200px]" onClick={() => handleCardClick("https://ifrs.edu.br/canoas/institucional/historico/")}>
                     <Image
-                    className="dark:invert"
+                    className="no-invert"
                     src={IFRS}
                     alt="Icone IFRS"
                     />

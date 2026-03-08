@@ -2,7 +2,7 @@
 import type { Config } from "tailwindcss";
 
 const config: Config = {
-  // ... suas outras configurações
+  darkMode: 'selector',
   plugins: [
     require('tailwind-intersect')
   ],

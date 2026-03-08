@@ -7,6 +7,10 @@ export const metadata: Metadata = {
   icons: {
     icon: '/favicon.ico',
   },
+  other:
+  {
+    "color-scheme": "light",
+  }
 };
 
 interface RootLayoutProps {
@@ -14,5 +18,11 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({children}: RootLayoutProps) {
-  return <>{children}</>;
+  return <>{
+    <html lang="pt-br" style={{ colorScheme: 'light' }}>
+      <body className="light-theme">
+        {children}
+      </body>
+    </html>
+  }</>;
 }
