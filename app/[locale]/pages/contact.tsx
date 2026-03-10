@@ -42,8 +42,8 @@ export default function About() {
   };
 
   return (
-    <main id="contact" className="flex mb-[100px] py-[100px] h-[590px] md:py-[350px] flex-row md:items-center justify-center gap-8 px-8 md:h-screen 2xl:w-full 2xl:max-h-[900px]">
-      <div className="flex flex-col items-start justify-start w-full max-w-[900px] bg-black min-h-[550px] rounded-2xl md:w-7/12 p-8 gap-6 shadow-2xl">
+    <main id="contact" className="flex mb-[100px] py-[100px] h-[590px] md:py-[360px] flex-row md:items-center justify-center gap-8 px-8 md:h-screen 2xl:w-full 2xl:max-h-[900px]">
+      <div className="flex flex-col items-start justify-start w-full max-w-[900px] bg-black min-h-[550px] md:min-h-[500px] rounded-2xl md:w-7/12 p-8 gap-6 shadow-2xl">
         
         <div className="flex flex-col w-full justify-center items-center gap-2">
           <p className="text-3xl font-bold text-white uppercase tracking-tight">
