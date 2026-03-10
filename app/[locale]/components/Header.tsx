@@ -1,6 +1,6 @@
 'use client';
 import {useTranslations} from 'next-intl';
-import { House } from 'lucide-react';
+import { ChevronDown, House } from 'lucide-react';
 import { Languages } from 'lucide-react';
 import { DropdownMenu, Button, Theme, Flex } from '@radix-ui/themes';
 import { useRouter } from 'next/navigation'
@@ -27,9 +27,10 @@ export default function Header() {
                     <Theme>
                         <DropdownMenu.Root>
                             <DropdownMenu.Trigger>
-                                <Button variant="ghost" size="2" className="cursor-pointer">
-                                    {t('language.language')}
-                                </Button>
+                                  <Button variant="ghost" size="2" className="cursor-pointer flex items-center gap-1">
+                                        {t('language.language')} 
+                                        <ChevronDown size={12} />
+                                    </Button>
                             </DropdownMenu.Trigger>
                             <DropdownMenu.Content className='z-3 bg-[#f5f5f5]' variant="soft" color="gray">
                                 <DropdownMenu.Item onClick={() => handleLanguageChange('pt-br')}>
