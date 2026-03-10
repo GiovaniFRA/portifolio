@@ -19,7 +19,6 @@ export default function About() {
             <div className="flex flex-row w-full justify-center items-center gap-25 sticky">
                 <Card className="h-[100px] w-[100px] min-w-[80px] min-h-[80px] flex flex-col">
                     <Image
-                    className="dark:invert"
                     src={HCJ}
                     alt="Icone HTML, CSS e JavaScript"
                     />
@@ -28,7 +27,6 @@ export default function About() {
                 
                 <Card className="h-[100px] w-[100px] min-w-[80px] min-h-[80px] flex flex-col sticky">
                     <Image
-                    className="dark:invert"
                     src={BACK}
                     alt="Icone PHP e SQL"
                     />
@@ -43,7 +41,7 @@ export default function About() {
             <div className="flex flex-row w-full justify-center items-center gap-25 sticky">
                 <Card className="h-[100px] w-[100px] min-w-[80px] min-h-[80px] flex flex-col">
                     <Image
-                    className="dark:invert h-[25px]"
+                    className="h-[25px]"
                     src={TAILWIND}
                     alt="Icone Tailwind CSS"
                     />
@@ -52,7 +50,7 @@ export default function About() {
                 
                 <Card className="h-[100px] w-[100px] min-w-[80px] min-h-[80px] flex flex-col sticky">
                     <Image
-                    className="dark:invert h-[30px]"
+                    className="h-[30px]"
                     src={REACT}
                     alt="Icone React"
                     />

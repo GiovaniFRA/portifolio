@@ -18,11 +18,5 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({children}: RootLayoutProps) {
-  return <>{
-    <html lang="pt-br" style={{ colorScheme: 'light' }}>
-      <body className="light-theme">
-        {children}
-      </body>
-    </html>
-  }</>;
+  return <>{children}</>;
 }
