@@ -4,8 +4,8 @@ import ProjectSection from "../components/ProjectsCards";
 export default function About() {
   const t = useTranslations('experience');
   return (
-    <main id="experience" className="flex max-h-[1000px] py-[80px] flex-row md:py-[1100px]
-    md:items-center justify-center gap-8 px-8 md:h-screen md:py-[390px]
+    <main id="experience" className="flex max-h-[1000px] py-[80px] flex-row
+    md:items-center justify-center gap-8 px-8 md:h-screen md:py-[390px] md:max-h-[900px] 2xl:py-[360px] 2xl:h-screen
     2xl: w-full 2xl:max-h-[900px]
     ">
         <div className="flex flex-col items-center justify-center w-full max-w-[1440px] 
