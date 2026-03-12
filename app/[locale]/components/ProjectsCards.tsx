@@ -2,7 +2,7 @@
 import { useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import Image from "next/image";
-import { ChevronLeft, ChevronRight } from "lucide-react"; // Importando as setas
+import { ChevronLeft, ChevronRight } from "lucide-react"; 
 import Flipcard from "./FlipCard";
 import REVISAO from "../../img/revisaoonline.png";
 import CURADOR from "../../img/curador-virtual.png";
@@ -20,47 +20,55 @@ export default function ProjectSection() {
     { id: 'curadorvirtual', img: CURADOR, url: "http://curadorvirtual.educacao.ws/" }
   ];
 
-  // Função para controlar o scroll via botões
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
+      // Scrolla quase a largura total visível para garantir que o próximo card apareça
+      const scrollAmount = clientWidth * 0.8; 
       const scrollTo = direction === 'left' 
-        ? scrollLeft - clientWidth / 2 
-        : scrollLeft + clientWidth / 2;
+        ? scrollLeft - scrollAmount 
+        : scrollLeft + scrollAmount;
       
       scrollRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
     }
   };
 
   return (
-    <div className="relative group w-full max-w-[1100px] flex items-center justify-center mx-auto px-4">
+    /* h-full ou min-h para garantir que o container não corte a sombra dos cards */
+    <div className="relative group w-full max-w-[1100px] flex items-center mx-auto overflow-visible">
       
-      {/* Seta Esquerda (Oculta no mobile, aparece no hover no desktop) */}
+      {/* Seta Esquerda - z-50 para ficar acima do Flipcard */}
       <button 
         onClick={() => scroll('left')}
-        className="hidden md:flex absolute left-0 z-10 p-2 bg-white/80 rounded-full shadow-md hover:bg-white transition-all opacity-0 group-hover:opacity-100"
+        className="absolute left-2 z-[50] p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:bg-white active:scale-90 transition-all"
+        aria-label="Anterior"
       >
-        <ChevronLeft size={32} className="text-black" />
+        <ChevronLeft size={28} className="text-black" />
       </button>
 
       {/* Container com Scroll */}
       <div 
         ref={scrollRef}
-        className="flex flex-row overflow-x-auto snap-x snap-mandatory w-full justify-start items-center gap-6 py-12 scrollbar-hide scroll-smooth"
+        /* - px-[10%] ou px-12: Garante que o primeiro e último card não fiquem colados na borda.
+           - snap-x snap-mandatory: O card "prende" no centro ao soltar o scroll.
+        */
+        className="flex flex-row overflow-x-auto snap-x snap-mandatory w-full justify-start items-center gap-6 py-12 px-12 scrollbar-hide scroll-smooth"
       >
         {projects.map((project, index) => {
-          const delay = index * 0.9; 
+          const delay = index * 0.2; // Delay menor para ser mais responsivo
 
           return (
+            /* flex-shrink-0: Impede que o card seja esmagado para caber na tela */
             <div key={project.id} className="flex-shrink-0 snap-center">
               <Flipcard
                 style={{ animationDelay: `${delay}s` }}
                 title={t(`${project.id}.title`)}
                 text={t(`${project.id}.description`)}
-                className='min-h-[350px] w-[280px] md:w-[220px] md:max-h-[275px] md:min-h-[275px]'
+                /* Largura fixa no mobile (w-[260px]) para não cortar o conteúdo */
+                className='min-h-[350px] w-[260px] md:w-[220px] md:max-h-[275px] md:min-h-[275px]'
                 URL={project.url}
               >
-                <Image src={project.img} alt={project.id} className="no-invert" />
+                <Image src={project.img} alt={project.id} className="no-invert object-contain p-4" />
               </Flipcard>
             </div>
           );
@@ -70,9 +78,10 @@ export default function ProjectSection() {
       {/* Seta Direita */}
       <button 
         onClick={() => scroll('right')}
-        className="hidden md:flex absolute right-0 z-10 p-2 bg-white/80 rounded-full shadow-md hover:bg-white transition-all opacity-0 group-hover:opacity-100"
+        className="absolute right-2 z-[50] p-2 bg-white/90 backdrop-blur-sm rounded-full shadow-lg hover:bg-white active:scale-90 transition-all"
+        aria-label="Próximo"
       >
-        <ChevronRight size={32} className="text-black" />
+        <ChevronRight size={28} className="text-black" />
       </button>
 
     </div>
